@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { FaUserCircle } from "react-icons/fa";
 
-const Auth0UserInfo = () => {
+function Auth0UserInfo() {
   const { user, isAuthenticated, isLoading, loginWithRedirect, logout } = useAuth0();
   const [showUserInfo, setShowUserInfo] = useState(false);
 
