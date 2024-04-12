@@ -12,9 +12,11 @@ function App() {
       <h1 className="text-5xl font-bold">
         How can I help you today?
       </h1>
-      <div className="item-center">
-        <Auth0UserInfo/>
+      <div className="w-12/12 lg:w-10/12 flex justify-end p-0 right-8 mt-2">
+        <Auth0UserInfo />
       </div>
+
+      {/* shadcn componenet */}
       <Button>Click me</Button>
     </div>
   )
