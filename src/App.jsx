@@ -1,6 +1,5 @@
 import React from "react"
-import Auth0UserInfo from "./component/Auth0UserInfo/Auth0UserInfo"
-
+import Auth0UserInfo from "./component/auth0UserInfo/Auth0UserInfo"
 
 function App() {
 
