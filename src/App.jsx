@@ -1,4 +1,5 @@
 import React from "react"
+import Auth0UserInfo from "./component/Auth0UserInfo/Auth0UserInfo"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <h1 className="text-5xl font-bold">
         How can I help you today?
       </h1>
+      <Auth0UserInfo/>
     </div>
   )
 }
