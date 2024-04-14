@@ -1,7 +1,7 @@
 import React from "react"
 import Auth0UserInfo from "./components/auth0UserInfo/Auth0UserInfo"
 import { Button } from "@/components/ui/button"
-import Main from "./component/main/Main.jsx";
+import Main from "./components/main/Main.jsx";
 import "./App.css";
 
 function App() {
