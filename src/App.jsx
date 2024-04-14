@@ -18,6 +18,7 @@ function App() {
 
       {/* shadcn componenet */}
       <Button>Click me</Button>
+      <Main />
     </div>
   )
 }
