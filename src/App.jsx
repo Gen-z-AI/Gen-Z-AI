@@ -2,45 +2,40 @@ import React from "react"
 import Auth0UserInfo from "./components/auth0UserInfo/Auth0UserInfo"
 import { Button } from "@/components/ui/button"
 
-// function App() {
-
-//   return (
-//     <div className="text-center item-center mt-20">
-//       <h1 className="text-5xl font-bold">
-//         Gen'z-AI
-//       </h1>
-//       <h1 className="text-5xl font-bold">
-//         How can I help you today?
-//       </h1>
-//       <div className="w-12/12 lg:w-10/12 flex justify-end p-0 right-8 mt-2">
-//         <Auth0UserInfo />
-//       </div>
-
-//       {/* shadcn componenet */}
-//       <Button>Click me</Button>
-//     </div>
-//   )
-// }
-
-// export default App
-import Main from "./component/main/Main.jsx";
-import "./App.css";
-
 function App() {
+
   return (
-    <>
-    <div className="w-12/12 lg:w-10/12 flex justify-end p-0 right-8 mt-2">
-<Auth0UserInfo />
+    <div className="text-center item-center mt-20">
+      <h1 className="text-5xl font-bold">
+        Gen'z-AI
+      </h1>
+      <h1 className="text-5xl font-bold">
+        How can I help you today?
+      </h1>
+      <div className="w-12/12 lg:w-10/12 flex justify-end p-0 right-8 mt-2">
+        <Auth0UserInfo />
       </div>
-    {/* shadcn componenet */}
-     <Button>Click me</Button>
-      {/* <div className="text-center item-center mt-20">
-        <h1 className="text-5xl font-bold">Gen-z-AI</h1>
-        <h1 className="text-5xl font-bold">How can I help you today?</h1>
-      </div> */}
-      <Main />
-    </>
-  );
+
+      {/* shadcn componenet */}
+      <Button>Click me</Button>
+    </div>
+  )
 }
 
-export default App;
+export default App
+// import Main from "./component/main/Main.jsx";
+// import "./App.css";
+
+// function App() {
+//   return (
+//     <>
+//       {/* <div className="text-center item-center mt-20">
+//         <h1 className="text-5xl font-bold">Gen-z-AI</h1>
+//         <h1 className="text-5xl font-bold">How can I help you today?</h1>
+//       </div> */}
+//       <Main />
+//     </>
+//   );
+// }
+
+// export default App;
