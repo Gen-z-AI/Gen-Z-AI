@@ -8,21 +8,21 @@ const Loader = () => {
   <div className="about">
     <a
       className="bg_links social portfolio"
-      href="https://www.rafaelalucas.com"
+      href=" "
       target="_blank"
     >
       <span className="icon" />
     </a>
     <a
       className="bg_links social dribbble"
-      href="https://dribbble.com/rafaelalucas"
+      href=" "
       target="_blank"
     >
       <span className="icon" />
     </a>
     <a
       className="bg_links social linkedin"
-      href="https://www.linkedin.com/in/rafaelalucas/"
+      href=" "
       target="_blank"
     >
       <span className="icon" />
