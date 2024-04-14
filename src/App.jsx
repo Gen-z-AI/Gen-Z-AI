@@ -1,6 +1,8 @@
 import React from "react"
 import Auth0UserInfo from "./components/auth0UserInfo/Auth0UserInfo"
 import { Button } from "@/components/ui/button"
+import Main from "./component/main/Main.jsx";
+import "./App.css";
 
 function App() {
 
@@ -18,13 +20,13 @@ function App() {
 
       {/* shadcn componenet */}
       <Button>Click me</Button>
+      <Main />
     </div>
   )
 }
 
 export default App
-// import Main from "./component/main/Main.jsx";
-// import "./App.css";
+
 
 // function App() {
 //   return (
@@ -33,7 +35,7 @@ export default App
 //         <h1 className="text-5xl font-bold">Gen-z-AI</h1>
 //         <h1 className="text-5xl font-bold">How can I help you today?</h1>
 //       </div> */}
-//       <Main />
+
 //     </>
 //   );
 // }
