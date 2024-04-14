@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useEffect, useRef } from "react";
 import { Myprovider } from "../AI_Context/AiContext";
 import { SiProbot } from "react-icons/si";
@@ -108,3 +109,8 @@ const Prompt = () => {
 };
 
 export default Prompt;
+=======
+export default function Prompt() {
+  return <div className="Rectangle"></div>;
+}
+>>>>>>> 68122cb301b9f55037079abc48f1cf11be7e1232
