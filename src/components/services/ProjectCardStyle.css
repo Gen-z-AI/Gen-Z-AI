@@ -1,0 +1,142 @@
+.project-window {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+}
+
+.project-wrapper.odd {
+    flex-direction: row-reverse;
+}
+ 
+
+.about-project .desc {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.project-img {
+    margin-left: 100px;
+    object-fit: contain;
+    animation: jump 2.7s infinite;
+    position: relative;
+    top: 0px;
+    filter: drop-shadow(2px 10px 20px rgba(255, 255, 255, 0.32));
+}
+
+.odd .project-img {
+    margin-right: 100px;
+    margin-left: 0;
+}
+
+@keyframes jump {
+    0% {
+        top: 20px;
+    }
+
+    50% {
+        top: -20px;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+.project-img  img {
+    border-radius: 18px;
+    max-width: 500px;
+    width: fit-content;
+    height: auto;
+}
+
+@media screen and (max-width: 1150px) {
+    .project-window {
+        padding-left: 17vw;
+        padding-top: 180px;
+    }
+
+    .project-img {
+        margin-left: 60px;
+    }
+
+    .odd .project-img {
+        margin-right: 60px;
+    }
+
+    .project-img  img  {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 950px), screen and (max-height: 550px) {
+    .project-wrapper, .project-wrapper.odd {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-window {
+        padding-left: 25vw;
+        padding-top: 100px;
+    }
+
+    .project-title {
+        margin-top: 40px;
+    }
+
+    .project-img {
+        margin: 0;
+    }
+
+    .odd .project-img {
+        margin: 0;
+    }
+
+    .project-img  img  {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .project-window {
+        padding: 110px 150px 0;
+    }
+    .project-wrapper, .project-wrapper.odd {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-title {
+        margin-top: 35px;
+        font-size: 32px;
+    }
+
+    .about-project .desc {
+        font-size: 16px;
+    }
+
+    .about-project .btn {
+        font-size: 16px;
+    }
+
+    .project-img {
+        margin: 0;
+    }
+    .odd .project-img {
+        margin: 0;
+    }
+
+    .project-img  img  {
+        max-width: 300px;
+    }
+}
+
