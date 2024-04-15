@@ -1,5 +1,5 @@
 import React from 'react'
-import { Myprovider } from '../AI_Context/AiContext'
+import { Myprovider } from '../ai-context/AiContext';
 import { SiProbot } from "react-icons/si";
 import { BiImageAdd } from "react-icons/bi";
 import { MdMicNone } from "react-icons/md";

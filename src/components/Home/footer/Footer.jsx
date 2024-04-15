@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../public/Images/footer_logo.jpg';
+import logo from '../../../../public/Images/logo.png'
 import { FaAngleDoubleRight, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
