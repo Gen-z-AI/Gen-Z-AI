@@ -110,7 +110,7 @@ const Prompt = () => {
 
 export default Prompt;
 
-export default function Prompt() {
-  return <div className="Rectangle"></div>;
-}
+// export default function Prompt() {
+//   return <div className="Rectangle"></div>;
+// }
 
