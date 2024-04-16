@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.jsx';
-import { Auth0Provider } from '@auth0/auth0-react'; // Import Auth0Provider
+import { Auth0Provider } from '@auth0/auth0-react'; 
 import './index.css';
-import { ContextProvider } from './components/ai-context/AiContext.jsx'
+import { ContextProvider } from './components/ai-context/AiContext'; 
 
 
 ReactDOM.render(
