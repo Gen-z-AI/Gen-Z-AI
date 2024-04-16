@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { Button, Image, Card } from 'react-bootstrap';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../../../public/Images/logo.png'
-import Auth0UserInfo from '../auth0UserInfo/Auth0UserInfo';
+import logo from '../../../../public/Images/logo.png'
 
 
 function Header() {
@@ -55,7 +54,7 @@ function Header() {
                     </div>
 
                     <div className='flex gap-3'>
-                        <Auth0UserInfo/>
+                        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Login</button>
                         <button className="block md:hidden text-gray-800 mr-5" onClick={handleToggleMenu}>
                             {showMenu ?
                                 <FaTimes className="text-2xl transition-colors duration-300 text-blue-500 hover:text-blue-700" />

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Tilt } from 'react-tilt'; // Import Tilt directly from react-tilt
 import Accordion from './Accordion ';
-import rajan1 from '../../../public/Images/rajan1.jpg'
-import rajan2 from '../../../public/Images/rajan-2.jpg'
+import rajan1 from '../../../../public/Images/rajan1.jpg'
+import rajan2 from '../../../../public/Images/rajan-2.jpg'
 
 function Team() {
   return (
