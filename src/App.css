@@ -1,0 +1,96 @@
+body {
+  max-height: max-content;
+}
+.Header {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 30px;
+}
+h1.name {
+  padding-left: 50px;
+  color: black;
+}
+.screen {
+  display: flex;
+  flex-direction: row;
+  max-height: max-content;
+  margin-bottom: 0;
+}
+.mainframe {
+  margin-left: 31px;
+  margin-bottom: 0;
+}
+.sidebar {
+  width: 246px;
+  background-color: rgba(0, 0, 0, 0.625);
+}
+.Welcome {
+  width: 1097px;
+
+  line-height: normal;
+  margin-bottom: 2px;
+}
+.heading_1 {
+  color: #7000ff;
+  font-size: 70px;
+  font-family: Goldman;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+.heading_2 {
+  color: #6b01fe;
+  font-size: 70px;
+  font-family: Goldman;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+.PromptComponent {
+  width: 1132px;
+  height: 262px;
+  padding-right: 35px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 35px;
+  display: inline-flex;
+  margin-bottom: 10px;
+}
+.Rectangle {
+  width: 248px;
+  height: 262px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.33) 0%,
+    rgba(255, 255, 255, 0.42) 100%
+  );
+  border: 1px rgba(0, 0, 0, 0.34) solid;
+}
+.ChatBar {
+  width: 1088px;
+  height: 107px;
+  position: relative;
+  margin-top: 30px;
+}
+.Chatbox {
+  width: 1088px;
+  height: 107px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: white;
+  border-radius: 49px;
+  border: 1px rgba(0, 0, 0, 0.34) solid;
+}
+.Send {
+  width: 43px;
+  height: 37px;
+  left: 998px;
+  top: 35px;
+  position: absolute;
+  background: white;
+}
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  line-height: normal;
+  max-height: max-content;
+}
