@@ -34,22 +34,22 @@ const SuggestionCard = ({ setData }) => {
   };
 
   return (
-    <div className="cards w-full flex justify-center flex-wrap gap-2">
+    <div className="cards w-full flex flex-wrap justify-center lg:gap-2">
       {suggestions.map((suggestion) => (
         <motion.div
           key={suggestion.id}
-          className="card w-full sm:w-48 h-30 rounded-lg border p-5 sm:p-5 lg:p-8 relative bg-slate-100 hover:bg-slate-300 mb-4 sm:mb-0"
+          className="card w-full sm:w-84 md:w-64 lg:w-48 h-30 rounded-lg border p-5 sm:p-5 lg:p-8 relative bg-slate-100 hover:bg-slate-300 mb-4 flex items-center"
           animate={{ x: [-2000, 0] }}
           transition={{ duration: 1 }}
-          style={{ minWidth: 'calc(25% - 0.5rem)' }}
+          style={{ minWidth: 'calc(25% - 0.5rem)', maxWidth: '100%' }}
         >
           <p
-            className="text-wrap text-sm sm:text-base cursor-pointer"
+            className="text-wrap text-sm sm:text-base cursor-pointer flex-grow"
             onClick={() => handleSuggestionClick(suggestion.text)}
           >
             {suggestion.text}
           </p>
-          <div className="w-10 h-10 bg-white rounded-full flex justify-center items-center absolute bottom-4 right-4 icon-container">
+          <div className="p-2 bg-white rounded-full flex justify-center items-center icon-container lg:absolute lg:bottom-4 lg:right-4">
             {React.cloneElement(suggestion.icon, {
               className: "text-xl sm:text-2xl text-gray-600"
             })}

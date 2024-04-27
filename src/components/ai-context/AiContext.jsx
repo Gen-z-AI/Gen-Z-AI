@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
-import runChat from "@/config/Gen";
+import runChat from "../../Config/Gen";
 import { PiArrowArcRight } from "react-icons/pi";
 
 const Ai_context = createContext();
@@ -57,7 +57,7 @@ const ContextProvider = ({ children }) => {
             if (index % 2 === 0) {
                 return part;
             } else {
-                return <b key={index}>{part}<br /></b>;
+                return <b key={index}>{part}</b>;
             }
         });
 
@@ -66,6 +66,7 @@ const ContextProvider = ({ children }) => {
                 {parts.map((part, index) => (
                     <div key={index} className="chat-line">
                         {part}
+                        <br /> {/* New line after each part */}
                     </div>
                 ))}
             </div>

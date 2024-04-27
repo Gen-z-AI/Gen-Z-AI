@@ -43,14 +43,9 @@ const Main = () => {
     }
   };
 
-  const handlekey = (e) => {
-    if (e.key === "Enter") {
-      if (data.length === 0) {
-        alert("please Enter a Prompt");
-      } else {
-        handleClick();
-      }
-    }
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent the default form submission
+    handleClick();
   };
 
   const toggleMobileMenu = () => {
@@ -58,29 +53,29 @@ const Main = () => {
   };
 
   return (
-    <div className="lg:w-screen sm:w-screen flex flex-col items-center overflow-y-scroll scroll-smooth">
-      <div className="h-screen bg-white flex flex-col justify-between">
-        <Header toggleMobileMenu={toggleMobileMenu} />
+    <div className="h-screen w-full flex flex-col items-center">
+      <Header toggleMobileMenu={toggleMobileMenu} />
+      <div className="flex flex-col justify-between  overflow-x-hidden overflow-y-scroll scroll-smooth gap-2 min-h-[calc(100vh-4rem)] relative">
 
         {prompt ? (
           <Prompt />
         ) : (
-          <div className="middle-part w-full sm:gap-4 flex flex-col items-center p-5 grid grid-cols-1 gap-5">
+          <div className="lg:mt-28 mt-14 middle-part justify-between w-full items-center px-5 grid grid-cols-1 gap-2 sm:gap-5">
             <AIGreeting />
             <Suggestions setData={setData} />
           </div>
         )}
 
-        <Footer
-          data={data}
-          handlechange={handlechange}
-          handleClick={handleClick}
-          handlekey={handlekey}
-        />
-        <h1 className="text-center">
-          The Answer Provided by this Ai tool could be wrong that'why don't
-          take it seriously
-        </h1>
+        <form onSubmit={handleSubmit}> {/* Wrap input field in a form element */}
+          <Footer
+            data={data}
+            handlechange={handlechange}
+            handleClick={handleClick}
+          />
+        <p className="text-xs mb-2 px-10 text-neutral-600 text-center">
+          This answer is provided by this Gen-Z-Ai tool, could be wrong that&apos;why don&apos;t take it seriously
+        </p>
+        </form>
       </div>
     </div>
   );

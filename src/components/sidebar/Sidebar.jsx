@@ -74,26 +74,28 @@ function Sidebar() {
       {!mobile && (
         <div className="for mobile">
           <div className="w-80 h-screen absolute top-3 left-0 z-20 flex flex-col justify-around" style={{ background: "#F0F4F9" }}>
-            <div className="inline-block rounded-full ml-3 mt-5 border border-gray-300 p-1 mr-5">
+            <div className="inline-block flex items-center rounded-full ml-3 mt-5 border border-gray-300 p-1 mr-5 hover:bg-slate-200">
               <NewChatButton />
+              <h1 class="mr-50 ml-2">New chat</h1> 
             </div>
             <div className="ml-5">
               <RecentChats />
             </div>
-            <div className="flex flex-col">
-              <div className="inline-block flex rounded-full ml-3 mt-5 border border-gray-300 p-1 mr-5 items-center">
+            <div className="flex flex-col ">
+              <div className="inline-block flex rounded-full ml-3 mt-5 border border-gray-300 p-1 mr-5 items-center l hover:bg-slate-200">
                 <MenuItem title="Help" Icon={AiOutlineQuestionCircle} />
-                <h1>Help</h1>
+                <h1 class="mr-60">Help</h1> 
               </div>
-              <div className="inline-block flex items-center rounded-full ml-3 mt-5 border border-gray-300 p-1 mr-5">
+              <div className="inline-block flex items-center rounded-full ml-3 mt-5 border border-gray-300 p-1 mr-5 hover:bg-slate-200">
                 <MenuItem title="Activity" Icon={RxCounterClockwiseClock} />
-                <h1>Activity</h1>
+                <h1 class="mr-60">Activity</h1>
               </div>
-              <div className="inline-block flex items-center rounded-full ml-3 mt-5 border border-gray-300 p-1 mr-5">
+              <div className="inline-block flex items-center rounded-full ml-3 mt-5 border border-gray-300 p-1 mr-5 hover:bg-slate-200">
                 <MenuItem title="Settings" Icon={IoSettingsOutline} />
-                <h1>Settings</h1>
+                <h1 class="mr-60">Settings</h1> 
               </div>
             </div>
+
           </div>
         </div>
       )}
